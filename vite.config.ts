@@ -1,9 +1,15 @@
+import path from 'path' // 👈 C'est la ligne indispensable à ajouter au tout début
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
   base: '/audit-express-ae-web-digital/',
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
 })
 
 // Blink: guarantee global CSS survives agent rewrites of src/routes/__root.tsx.
