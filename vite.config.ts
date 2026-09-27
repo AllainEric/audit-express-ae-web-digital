@@ -1,12 +1,12 @@
 import path from 'path'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite' // 👈 L'importation manquante est ici
+import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [
     react(),
-    tailwindcss() // On s'assure que le plugin est bien activé
+    tailwindcss()
   ],
   resolve: {
     alias: {
