@@ -1,12 +1,10 @@
-import { defineConfig } from 'vite';
-import { tanstackStart } from '@tanstack/react-start/plugin/vite';
-import viteReact from '@vitejs/plugin-react';
-import tailwindcss from '@tailwindcss/vite';
-import path from 'path';
-import fs from 'node:fs';
-// Blink Visual Editor: stamps data-blnk-id on JSX + injects iframe-side picker
-// runtime. Self-contained (no external deps) so this template stays portable.
-import { blinkTaggerPlugin } from './blink-tagger.plugin.mjs';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+export default defineConfig({
+  plugins: [react()],
+  base: '/audit-express-ae-web-digital/',
+})
 
 // Blink: guarantee global CSS survives agent rewrites of src/routes/__root.tsx.
 // TanStack Start only emits a stylesheet for CSS imported by a ROUTE module, and
