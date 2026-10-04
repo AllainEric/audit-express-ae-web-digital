@@ -1,6 +1,6 @@
 {
   "cleanUrls": true,
   "rewrites": [
-    { "source": "/(.*)", "destination": "/routes/app/index.tsx" }
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
