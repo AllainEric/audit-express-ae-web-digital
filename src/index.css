@@ -168,3 +168,14 @@
     to   { opacity: 1; transform: translateY(0); }
   }
 }
+/* Supprimer définitivement le filigrane et le badge de Blink */
+[class*="blink"], 
+[id*="blink"], 
+.blink-badge, 
+#blink-badge,
+a[href*="blink.new"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
