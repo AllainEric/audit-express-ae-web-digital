@@ -51,14 +51,15 @@ export const Route = createRootRoute({
     meta: [
       { charSet: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
-      { title: 'Audit Express gratuit · AE WEB DIGITAL' },
-      { name: 'description', content: 'En 30 minutes, identifiez où votre TPE perd du temps et repartez avec 3 actions concrètes, gratuitement.' },
-      { name: 'theme-color', content: '#0F172A' },
+      { title: 'Audit Express | Transformation Digitale & IA pour TPE' },
+      { name: 'description', content: 'Boostez votre activité avec Audit Express. Spécialiste en audit digital, automatisation et intégration de l\'IA pour les TPE en France. Optimisez vos processus dès aujourd\'hui.' },
+      { name: 'keywords', content: 'Transformation digitale TPE, Audit digital TPE, Automatisation TPE, IA pour TPE, efficacité opérationnelle, outils digitaux PME' },
+      
+      // Optimisation pour les partages sur les réseaux sociaux (Open Graph)
+      { property: 'og:title', content: 'Audit Express | Performance & Digital pour les TPE' },
+      { property: 'og:description', content: 'Audit digital, automatisation et solutions IA sur mesure pour propulser votre TPE.' },
       { property: 'og:type', content: 'website' },
-      { property: 'og:title', content: 'Audit Express gratuit · AE WEB DIGITAL' },
-      { property: 'og:description', content: 'Un audit digital gratuit de 30 minutes pour récupérer du temps dans votre TPE.' },
-      { property: 'og:site_name', content: 'AE WEB DIGITAL' },
-      { property: 'og:locale', content: 'fr_FR' },
+      { property: 'og:locale', content: 'fr_FR' } 
       { name: 'twitter:card', content: 'summary_large_image' },
     ],
     links: [
