@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://audit-express-ae-web-digital.vercel.app/
