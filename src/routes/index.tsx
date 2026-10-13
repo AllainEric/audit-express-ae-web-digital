@@ -186,23 +186,21 @@ function AuditExpress() {
 
     <section id="top" className="relative mx-auto flex min-h-dvh max-w-7xl items-center px-5 pb-16 pt-28 sm:px-8 lg:pt-32"><div className="absolute left-1/2 top-24 -z-0 size-[420px] -translate-x-1/2 rounded-full bg-primary/10 blur-[120px]" aria-hidden="true" /><div className="relative z-10 w-full"><Reveal><div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1.5 text-xs font-semibold text-primary"><Sparkles className="size-3.5" />Audit Express · 30 minutes · 0 €</div><h1 className="max-w-4xl text-[clamp(2.8rem,6vw,5.65rem)] font-semibold leading-[0.98] tracking-[-0.055em] text-foreground">En 30 minutes, sachez exactement où votre entreprise <span className="text-primary">perd du temps et des clients.</span></h1>
       
-      <p className="mt-7 max-w-2xl text-base leading-7 text-muted-foreground sm:text-lg">Un échange avec un consultant qui a dirigé ses propres TPE pendant 15 ans. Vous repartez avec 3 actions concrètes pour récupérer du temps, mieux suivre vos opportunités et éviter de laisser des clients partir. Sans budget, sans compétence technique.</p><div className="mt-8 flex flex-col items-start gap-4 sm:flex-row sm:items-center"><Button onClick={scrollToBooking} size="lg" className="h-13 w-full px-6 text-base shadow-xl shadow-primary/25 sm:w-auto">Réserver mon Audit Express <ArrowRight className="size-5" /></Button><span className="text-xs text-muted-foreground">Gratuit · sans engagement · 30 min chrono</span></div><ul className="mt-8 grid max-w-3xl gap-3 text-sm text-muted-foreground sm:grid-cols-3 sm:gap-5"><li className="flex gap-2"><Check className="mt-0.5 size-4 shrink-0 text-accent" />Aucune vente pendant l’appel</li><li className="flex gap-2"><Check className="mt-0.5 size-4 shrink-0 text-accent" />3 actions écrites et chiffrées</li><li className="flex gap-2"><Check className="mt-0.5 size-4 shrink-0 text-accent" />Créneaux avant 8h ou après 18h</li></ul></Reveal></div></section>
+      <p className="mt-7 max-w-2xl text-base leading-7 text-muted-foreground sm:text-lg">Un échange avec un consultant qui a dirigé ses propres TPE pendant 15 ans. Vous repartez avec 3 actions concrètes pour récupérer du temps, mieux suivre vos opportunités et éviter de laisser des clients partir. Sans budget, sans compétence technique.</p><div className="mt-8 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
 
-      {/* Lecteur vidéo natif alimenté par le flux Google Drive */}
+      {/* Intégration Iframe Google Drive sous le titre principal */}
 <div className="w-full max-w-4xl mx-auto my-6 overflow-hidden rounded-xl shadow-lg aspect-video">
-  <video 
-    className="w-full h-full object-cover"
-    controls
-    autoPlay
-    muted
-    loop
-    playsInline
-    preload="metadata"
-  >
-    <source src="https://google.com/1sRaoA7rAb_zZTRCroXPd4BsjDyCPhS4y" type="video/mp4" />
-    Votre navigateur ne prend pas en charge la lecture de vidéos.
-  </video>
+  <iframe
+    src="https://drive.google.com/file/d/1sRaoA7rAb_zZTRCroXPd4BsjDyCPhS4y/preview"
+    className="w-full h-full"
+    allow="autoplay; encrypted-media"
+    allowFullScreen
+    frameBorder="0"
+  ></iframe>
 </div>
+  
+        
+    <Button onClick={scrollToBooking} size="lg" className="h-13 w-full px-6 text-base shadow-xl shadow-primary/25 sm:w-auto">Réserver mon Audit Express <ArrowRight className="size-5" /></Button><span className="text-xs text-muted-foreground">Gratuit · sans engagement · 30 min chrono</span></div><ul className="mt-8 grid max-w-3xl gap-3 text-sm text-muted-foreground sm:grid-cols-3 sm:gap-5"><li className="flex gap-2"><Check className="mt-0.5 size-4 shrink-0 text-accent" />Aucune vente pendant l’appel</li><li className="flex gap-2"><Check className="mt-0.5 size-4 shrink-0 text-accent" />3 actions écrites et chiffrées</li><li className="flex gap-2"><Check className="mt-0.5 size-4 shrink-0 text-accent" />Créneaux avant 8h ou après 18h</li></ul></Reveal></div></section>
 
     <section className="border-y border-border bg-card/45"><div className="mx-auto grid max-w-7xl divide-y divide-border px-5 sm:grid-cols-2 sm:px-8 lg:grid-cols-4 lg:divide-x lg:divide-y-0"><div className="flex gap-3 py-5 lg:px-7 lg:first:pl-0"><Clock3 className="mt-0.5 size-5 text-accent" /><div><p className="text-sm font-semibold">30 minutes</p><p className="mt-1 text-xs text-muted-foreground">Pas une de plus</p></div></div><div className="flex gap-3 py-5 sm:pl-7 lg:px-7"><ShieldCheck className="mt-0.5 size-5 text-accent" /><div><p className="text-sm font-semibold">100 % gratuit</p><p className="mt-1 text-xs text-muted-foreground">Aucune carte demandée</p></div></div><div className="flex gap-3 py-5 sm:pl-7 lg:px-7"><Video className="mt-0.5 size-5 text-primary" /><div><p className="text-sm font-semibold">En visio</p><p className="mt-1 text-xs text-muted-foreground">Depuis votre bureau</p></div></div><div className="flex gap-3 py-5 sm:pl-7 lg:pr-0"><MessageCircle className="mt-0.5 size-5 text-primary" /><div><p className="text-sm font-semibold">Zéro jargon</p><p className="mt-1 text-xs text-muted-foreground">On parle métier</p></div></div></div></section>
 
