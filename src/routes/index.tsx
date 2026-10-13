@@ -191,7 +191,7 @@ function AuditExpress() {
       {/* Intégration Iframe Google Drive sous le titre principal */}
 <div className="w-full max-w-4xl mx-auto my-6 overflow-hidden rounded-xl shadow-lg aspect-video">
   <iframe
-    src="https://drive.google.com/file/d/1sRaoA7rAb_zZTRCroXPd4BsjDyCPhS4y/preview"
+    src="https://drive.google.com/file/d/1sRaoA7rAb_zZTRCroXPd4BsjDyCPhS4y/preview?autoplay=1&mute=1"
     className="w-full h-full"
     allow="autoplay; encrypted-media"
     allowFullScreen
