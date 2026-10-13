@@ -193,6 +193,7 @@ function AuditExpress() {
   <iframe
     src="https://drive.google.com/file/d/1sRaoA7rAb_zZTRCroXPd4BsjDyCPhS4y/preview?autoplay=1&mute=1"
     className="w-full h-full"
+     allow="autoplay; encrypted-media"
     allowFullScreen
     frameBorder="0"
   ></iframe>
