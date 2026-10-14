@@ -210,7 +210,7 @@ function AuditExpress() {
     playsInline
     preload="auto"
   >
-    <source src="https://www.youtube.com/embed/b3e_gHumNdo?si=Eh5oAA5Ip4YXD7aP" type="video/mp4" />
+    <source src="https://www.youtube.com/watch?v=b3e_gHumNdo" type="video/mp4" />
     Votre navigateur ne prend pas en charge la lecture de vidéos.
   </video>
 </div>
