@@ -187,17 +187,6 @@ function AuditExpress() {
     <section id="top" className="relative mx-auto flex min-h-dvh max-w-7xl items-center px-5 pb-16 pt-28 sm:px-8 lg:pt-32"><div className="absolute left-1/2 top-24 -z-0 size-[420px] -translate-x-1/2 rounded-full bg-primary/10 blur-[120px]" aria-hidden="true" /><div className="relative z-10 w-full"><Reveal><div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1.5 text-xs font-semibold text-primary"><Sparkles className="size-3.5" />Audit Express · 30 minutes · 0 €</div><h1 className="max-w-4xl text-[clamp(2.8rem,6vw,5.65rem)] font-semibold leading-[0.98] tracking-[-0.055em] text-foreground">En 30 minutes, sachez exactement où votre entreprise <span className="text-primary">perd du temps et des clients.</span></h1>
       
       <p className="mt-7 max-w-2xl text-base leading-7 text-muted-foreground sm:text-lg">Un échange avec un consultant qui a dirigé ses propres TPE pendant 15 ans. Vous repartez avec 3 actions concrètes pour récupérer du temps, mieux suivre vos opportunités et éviter de laisser des clients partir. Sans budget, sans compétence technique.</p><div className="mt-8 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
-
-      {/* Intégration Iframe Google Drive sous le titre principal */}
-<div className="w-full max-w-4xl mx-auto my-6 overflow-hidden rounded-xl shadow-lg aspect-video">
-  <iframe
-    src="https://drive.google.com/file/d/1sRaoA7rAb_zZTRCroXPd4BsjDyCPhS4y/preview"
-    className="w-full h-full"
-     allow="autoplay; encrypted-media"
-    allowFullScreen
-    frameBorder="0"
-  ></iframe>
-</div>
   
 {/* Intégration YouTube optimisée sous le titre principal */}
 <div className="w-full max-w-4xl mx-auto my-6 overflow-hidden rounded-xl shadow-lg aspect-video">
