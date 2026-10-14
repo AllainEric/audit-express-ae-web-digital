@@ -199,21 +199,17 @@ function AuditExpress() {
   ></iframe>
 </div>
   
-{/* Lecteur vidéo natif configuré avec votre vidéo YouTube */}
+{/* Intégration YouTube optimisée sous le titre principal */}
 <div className="w-full max-w-4xl mx-auto my-6 overflow-hidden rounded-xl shadow-lg aspect-video">
-  <video 
-    className="w-full h-full object-cover"
-    controls
-    autoPlay
-    muted
-    loop
-    playsInline
-    preload="auto"
-  >
-    <source src="https://www.youtube.com/watch?v=b3e_gHumNdo" type="video/mp4" />
-    Votre navigateur ne prend pas en charge la lecture de vidéos.
-  </video>
+  <iframe
+    src="https://youtu.be?autoplay=1&mute=1&modestbranding=1&rel=0&loop=1&playlist=b3e_gHumNdo"
+    className="w-full h-full"
+    allow="autoplay; encrypted-media"
+    allowFullScreen
+    frameBorder="0"
+  ></iframe>
 </div>
+
 
         
     <Button onClick={scrollToBooking} size="lg" className="h-13 w-full px-6 text-base shadow-xl shadow-primary/25 sm:w-auto">Réserver mon Audit Express <ArrowRight className="size-5" /></Button><span className="text-xs text-muted-foreground">Gratuit · sans engagement · 30 min chrono</span></div><ul className="mt-8 grid max-w-3xl gap-3 text-sm text-muted-foreground sm:grid-cols-3 sm:gap-5"><li className="flex gap-2"><Check className="mt-0.5 size-4 shrink-0 text-accent" />Aucune vente pendant l’appel</li><li className="flex gap-2"><Check className="mt-0.5 size-4 shrink-0 text-accent" />3 actions écrites et chiffrées</li><li className="flex gap-2"><Check className="mt-0.5 size-4 shrink-0 text-accent" />Créneaux avant 8h ou après 18h</li></ul></Reveal></div></section>
